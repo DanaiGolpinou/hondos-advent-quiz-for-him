@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Holiday Gift Guide για εκείνον</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ΒΗΜΑ 0, Αρχική οθόνη -->
+    <section class="card step" data-step="0" aria-labelledby="title">
+      <header class="intro">
+        <h1 id="title">Holiday Gift Guide για εκείνον</h1>
+        <p class="muted">Βρες τι του ταιριάζει με λίγα μόνο click.</p>
+      </header>
+
+      <div class="intro-gallery">
+        <figure class="tile">
+          <img src="img/him_modern.jpg" alt="The Modern Gentleman" loading="lazy" decoding="async" width="800" height="600">
+          <figcaption>The Modern Gentleman</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="img/him_sporty.jpg" alt="The Sporty Spirit" loading="lazy" decoding="async" width="800" height="600">
+          <figcaption>The Sporty Spirit</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="img/him_creative.jpg" alt="The Cool Creative Guy" loading="lazy" decoding="async" width="800" height="600">
+          <figcaption>The Cool Creative Guy</figcaption>
+        </figure>
+      </div>
+
+      <div class="actions center start-sticky">
+        <button class="btn" id="startBtn">Έναρξη</button>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="bar" id="progressBar"></div>
+    </div>
+
+    <!-- ΒΗΜΑ 1: Q1 εικόνες -->
+    <section class="card step" data-step="1" hidden>
+      <h2 class="q-title">Τι ρόφημα θα ήταν;</h2>
+      <form class="q-form q-form-grid" data-name="q1">
+        <label class="imgopt">
+          <input type="radio" name="q1" value="A" required>
+          <figure class="imgcard">
+            <img src="img/him_q1_espresso.jpg" alt="Espresso" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Espresso</figcaption>
+          </figure>
+        </label>
+        <label class="imgopt">
+          <input type="radio" name="q1" value="B" required>
+          <figure class="imgcard">
+            <img src="img/him_q1_smoothie.jpg" alt="Protein smoothie" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Protein Smoothie</figcaption>
+          </figure>
+        </label>
+        <label class="imgopt">
+          <input type="radio" name="q1" value="C" required>
+          <figure class="imgcard">
+            <img src="img/him_q1_oldfashioned.jpg" alt="Old fashioned" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Old fashioned</figcaption>
+          </figure>
+        </label>
+      </form>
+      <div class="actions">
+        <button class="btn secondary" data-prev>Πίσω</button>
+        <button class="btn" data-next disabled>Επόμενο</button>
+      </div>
+    </section>
+
+    <!-- ΒΗΜΑ 2: Q2 εικόνες -->
+    <section class="card step" data-step="2" hidden>
+      <h2 class="q-title">Ποια Χριστουγεννιάτικη ταινία θα ήταν;</h2>
+      <form class="q-form q-form-grid" data-name="q2">
+        <label class="imgopt">
+          <input type="radio" name="q2" value="A" required>
+          <figure class="imgcard">
+            <img src="img/him_q2_polarexpress.jpg" alt="Polar Express, classy &amp; charming" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Polar Express: classy &amp; charming</figcaption>
+          </figure>
+        </label>
+        <label class="imgopt">
+          <input type="radio" name="q2" value="B" required>
+          <figure class="imgcard">
+            <img src="img/him_q2_elf.jpg" alt="Elf, fun &amp; playful" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Elf: fun &amp; playful</figcaption>
+          </figure>
+        </label>
+        <label class="imgopt">
+          <input type="radio" name="q2" value="C" required>
+          <figure class="imgcard">
+            <img src="img/him_q2_diehard.jpg" alt="Die Hard, unconventional αλλά iconic" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Die Hard: unconventional αλλά iconic</figcaption>
+          </figure>
+        </label>
+      </form>
+      <div class="actions">
+        <button class="btn secondary" data-prev>Πίσω</button>
+        <button class="btn" data-next disabled>Επόμενο</button>
+      </div>
+    </section>
+
+    <!-- ΒΗΜΑ 3: Q3 εικόνες -->
+    <section class="card step" data-step="3" hidden>
+      <h2 class="q-title">Τι ugly sweater θα φορούσε το πρωί των Χριστουγέννων;</h2>
+      <form class="q-form q-form-grid" data-name="q3">
+        <label class="imgopt">
+          <input type="radio" name="q3" value="A" required>
+          <figure class="imgcard">
+            <img src="img/him_q3_black_gold.jpg" alt="Μαύρο με δεινοσαύρους" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Μαύρο με δεινοσαύρους</figcaption>
+          </figure>
+        </label>
+        <label class="imgopt">
+          <input type="radio" name="q3" value="B" required>
+          <figure class="imgcard">
+            <img src="img/him_q3_red_reindeer.jpg" alt="Κόκκινο με τάρανδους" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Κόκκινο με τάρανδους</figcaption>
+          </figure>
+        </label>
+        <label class="imgopt">
+          <input type="radio" name="q3" value="C" required>
+          <figure class="imgcard">
+            <img src="img/him_q3_navy_retro.jpg" alt="Navy με retro prints" loading="lazy" decoding="async" width="600" height="800">
+            <figcaption>Navy με retro prints</figcaption>
+          </figure>
+        </label>
+      </form>
+      <div class="actions">
+        <button class="btn secondary" data-prev>Πίσω</button>
+        <button class="btn" data-next disabled>Επόμενο</button>
+      </div>
+    </section>
+
+    <!-- ΒΗΜΑ 4: Q4 κείμενο -->
+    <section class="card step" data-step="4" hidden>
+      <h2 class="q-title">Πώς φαντάζεσαι το ιδανικό του πρωινό;</h2>
+      <form class="q-form" data-name="q4">
+        <label class="opt">
+          <input type="radio" name="q4" value="A" required>
+          Καφές και πρωινή ρουτίνα περιποίησης
+        </label>
+        <label class="opt">
+          <input type="radio" name="q4" value="B" required>
+          Βόλτα για τρέξιμο και smoothie
+        </label>
+        <label class="opt">
+          <input type="radio" name="q4" value="C" required>
+          Brunch με φίλους
+        </label>
+      </form>
+      <div class="actions">
+        <button class="btn secondary" data-prev>Πίσω</button>
+        <button class="btn" data-next disabled>Επόμενο</button>
+      </div>
+    </section>
+
+    <!-- ΒΗΜΑ 5: Q5 κείμενο -->
+    <section class="card step" data-step="5" hidden>
+      <h2 class="q-title">Αν ήταν δώρο κάτω από το δέντρο, ποιο θα ήταν;</h2>
+      <form class="q-form" data-name="q5">
+        <label class="opt">
+          <input type="radio" name="q5" value="A" required>
+          Κουτί με ρολόι και άρωμα
+        </label>
+        <label class="opt">
+          <input type="radio" name="q5" value="B" required>
+          Gym bag με essentials
+        </label>
+        <label class="opt">
+          <input type="radio" name="q5" value="C" required>
+          Μικρό κουτί με κάτι που δεν περιμένεις
+        </label>
+      </form>
+      <div class="actions">
+        <button class="btn secondary" data-prev>Πίσω</button>
+        <button class="btn" id="submitBtn" disabled>Τέλος</button>
+      </div>
+    </section>
+
+    <!-- ΒΗΜΑ 6, Αποτέλεσμα -->
+    <section class="card step" data-step="6" hidden aria-live="polite">
+
+      <!-- Banner αποτελέσματος -->
+      <div class="result-banner" id="resultBanner">
+        <div class="celebrate-layer" aria-hidden="true">
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+          <span class="spark"></span>
+        </div>
+
+        <div class="result-intro-wrapper">
+          <div class="result-label">Ο τύπος δώρου που του ταιριάζει είναι:</div>
+          <div class="result-name" id="persona-name-inline">The Modern Gentleman 🖤</div>
+        </div>
+      </div>
+
+      <!-- Περιεχόμενο αποτελέσματος -->
+      <div class="result-wrap">
+        <img id="res-image" class="result-image" src="img/him_modern.jpg" alt="Αποτέλεσμα">
+        <div>
+          <p id="res-text"></p>
+          <div class="badges" id="res-badges"></div>
+          <div class="cta-row" id="res-links"></div>
+          <div class="actions">
+            <button class="btn secondary" id="restartBtn">Ξεκίνα ξανά</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<script>
+(function(){
+  var current = 0;
+  var steps = Array.from(document.querySelectorAll('.step'));
+  var progress = document.getElementById('progressBar');
+
+  var answers = { q1:null, q2:null, q3:null, q4:null, q5:null };
+
+  try { window.scrollTo({ top: 0, behavior: 'instant' }); } catch(e) {}
+
+  function show(stepIndex){
+    steps.forEach(function(s){ s.hidden = true; });
+    var s = steps[stepIndex];
+    if(s){ s.hidden = false; }
+    current = stepIndex;
+
+    var pct = Math.max(0, Math.min(100, Math.round(((stepIndex - 1) / 5) * 100)));
+    progress.style.width = stepIndex === 0 ? '0%' : pct + '%';
+    progress.parentElement.setAttribute('aria-valuenow', stepIndex === 0 ? 0 : pct);
+
+    var form = s ? s.querySelector('.q-form') : null;
+    var nextBtn = s ? s.querySelector('[data-next]') : null;
+    var prevBtn = s ? s.querySelector('[data-prev]') : null;
+    var submitBtn = document.getElementById('submitBtn');
+
+    if(prevBtn){ prevBtn.disabled = stepIndex <= 1; }
+    if(nextBtn){
+      var has = form && form.querySelector('input[type=radio]:checked');
+      nextBtn.disabled = !has;
+    }
+    if(submitBtn && stepIndex === 5){
+      var has5 = steps[5].querySelector('input[type=radio]:checked');
+      submitBtn.disabled = !has5;
+    }
+
+    try {
+      if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+      }
+    } catch(e){}
+
+    try {
+      window.scrollTo(0,0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    } catch(e){}
+  }
+
+  function tallyAndRender(){
+    var t = {A:0,B:0,C:0};
+    Object.keys(answers).forEach(function(k){
+      var v = answers[k];
+      if(v) t[v] += 1;
+    });
+
+    var personaKey = 'wellness';
+    var personaTitle = 'The Sporty Spirit 💪';
+    var desc  = 'Έχει πάντα ενέργεια, αγαπά την κίνηση και θέλει δώρα που τον ακολουθούν στον ρυθμό του. Skincare που αντέχει στην καθημερινότητα, φρέσκα αρώματα, sneakers και backpack είναι ό,τι χρειάζεται για να νιώθει ready to go κάθε μέρα.';
+    var links  = [
+      {label:'Skincare',href:'https://www.hondoscenter.com/el/beauty/andras/andriki-enydatosi/f/tmima-kallyntikon/eponyma-kallyntika-kathimerini-peripoiisi.html'},
+      {label:'Fragrances',href:'https://www.hondoscenter.com/el/set-andrikon-aromaton.html'},
+      {label:'Sneakers',href:'https://www.hondoscenter.com/el/fashion/andras/ypodisi/sneakers.html'},
+      {label:'Backpacks',href:'https://www.hondoscenter.com/el/fashion/andras/tsantes/sakidia-platis.html'}
+    ];
+    var img    = 'img/him_sporty.jpg';
+
+    if(t.A > t.B && t.A > t.C){
+      personaKey = 'glam';
+      personaTitle = 'The Modern Gentleman 🖤';
+      desc  = 'Διαχρονικός αλλά σύγχρονος, προσεγμένος χωρίς υπερβολές. Εκτιμά τα κλασικά αρώματα, τα grooming sets, τα προσεγμένα αξεσουάρ και τα καλοραμμένα παλτό που ολοκληρώνουν κάθε εμφάνιση με διακριτική κομψότητα.';
+      links  = [
+        {label:'Classic Fragrance Sets',href:'https://www.hondoscenter.com/el/set-andrikon-aromaton.html'},
+        {label:'Grooming Sets',href:'https://www.hondoscenter.com/el/beauty/andras/xyrisma-grooming/f/tmima-kallyntikon/eponyma-kallyntika-dermo-center.html'},
+        {label:'Accessories',href:'https://www.hondoscenter.com/el/fashion/andras/axesoyar.html'},
+        {label:'Outerwear',href:'https://www.hondoscenter.com/el/fashion/andras/endysi/palto.html'}
+      ];
+      img    = 'img/him_modern.jpg';
+    } else if(t.C > t.A && t.C > t.B){
+      personaKey = 'trend';
+      personaTitle = 'The Cool Creative Guy 🎨';
+      desc  = 'Του αρέσει να πειραματίζεται με στιλ, αγαπά τις λεπτομέρειες και προτιμά δώρα που έχουν χαρακτήρα. Niche αρώματα, κασκόλ, προϊόντα για τα μαλλιά και ιδιαίτερα πουλόβερ ταιριάζουν τέλεια στον δημιουργικό του κόσμο.';
+      links  = [
+        {label:'Niche Fragrances',href:'https://www.hondoscenter.com/el/beauty/niche.html'},
+        {label:'Scarves',href:'https://www.hondoscenter.com/el/fashion/andras/axesoyar/kaskol.html'},
+        {label:'Hair Care',href:'https://www.hondoscenter.com/el/beauty/andras/andriki-peripoiisi-mallion.html'},
+        {label:'Sweaters',href:'https://www.hondoscenter.com/el/fashion/andras/endysi/poylober.html'}
+      ];
+      img    = 'img/him_creative.jpg';
+    } else if(t.B > t.A && t.B > t.C){
+      personaKey = 'wellness';
+      personaTitle = 'The Sporty Spirit 💪';
+    } else {
+      if(t.A >= t.B && t.A >= t.C){
+        personaKey = 'glam';
+        personaTitle = 'The Modern Gentleman 🖤';
+        desc  = 'Διαχρονικός αλλά σύγχρονος, προσεγμένος χωρίς υπερβολές. Εκτιμά τα κλασικά αρώματα, τα grooming sets, τα προσεγμένα αξεσουάρ και τα καλοραμμένα παλτό που ολοκληρώνουν κάθε εμφάνιση με διακριτική κομψότητα.';
+        links  = [
+          {label:'Classic Fragrance Sets',href:'https://www.hondoscenter.com/el/set-andrikon-aromaton.html'},
+          {label:'Grooming Sets',href:'https://www.hondoscenter.com/el/beauty/andras/xyrisma-grooming/f/tmima-kallyntikon/eponyma-kallyntika-dermo-center.html'},
+          {label:'Accessories',href:'https://www.hondoscenter.com/el/fashion/andras/axesoyar.html'},
+          {label:'Outerwear',href:'https://www.hondoscenter.com/el/fashion/andras/endysi/palto.html'}
+        ];
+        img    = 'img/him_modern.jpg';
+      } else if(t.B >= t.A && t.B >= t.C){
+        personaKey = 'wellness';
+        personaTitle = 'The Sporty Spirit 💪';
+      } else {
+        personaKey = 'trend';
+        personaTitle = 'The Cool Creative Guy 🎨';
+        desc  = 'Του αρέσει να πειραματίζεται με στιλ, αγαπά τις λεπτομέρειες και προτιμά δώρα που έχουν χαρακτήρα. Niche αρώματα, κασκόλ, προϊόντα για τα μαλλιά και ιδιαίτερα πουλόβερ ταιριάζουν τέλεια στον δημιουργικό του κόσμο.';
+        links  = [
+          {label:'Niche Fragrances',href:'https://www.hondoscenter.com/el/beauty/niche.html'},
+          {label:'Scarves',href:'https://www.hondoscenter.com/el/fashion/andras/axesoyar/kaskol.html'},
+          {label:'Hair Care',href:'https://www.hondoscenter.com/el/beauty/andras/andriki-peripoiisi-mallion.html'},
+          {label:'Sweaters',href:'https://www.hondoscenter.com/el/fashion/andras/endysi/poylober.html'}
+        ];
+        img    = 'img/him_creative.jpg';
+      }
+    }
+
+    var banner = document.getElementById('resultBanner');
+    banner.className = 'result-banner result-' + personaKey;
+
+    document.getElementById('persona-name-inline').textContent = personaTitle;
+    document.getElementById('res-text').textContent  = desc;
+
+    var bb = document.getElementById('res-badges');
+    bb.innerHTML = '';
+
+    var ll = document.getElementById('res-links');
+    ll.innerHTML = '';
+    links.forEach(function(l){
+      var a = document.createElement('a');
+      a.href = l.href;
+      a.textContent = l.label;
+      a.className = 'linkbtn';
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      ll.appendChild(a);
+    });
+
+    document.getElementById('res-image').src = img;
+
+    show(6);
+  }
+
+  document.getElementById('startBtn').addEventListener('click', function(){
+    show(1);
+  });
+
+  document.addEventListener('click', function(e){
+    var btnPrev = e.target.closest('[data-prev]');
+    var btnNext = e.target.closest('[data-next]');
+    if(btnPrev){
+      e.preventDefault();
+      if(current > 1) show(current - 1);
+    }
+    if(btnNext){
+      e.preventDefault();
+      var form = steps[current].querySelector('.q-form');
+      if(form && form.checkValidity()){
+        var name = form.getAttribute('data-name');
+        var chosen = form.querySelector('input[type=radio]:checked');
+        answers[name] = chosen ? chosen.value : null;
+        show(current + 1);
+      } else if(form){
+        var first = form.querySelector('input[required]');
+        if(first && first.reportValidity){ first.reportValidity(); }
+      }
+    }
+    if(e.target.id === 'submitBtn'){
+      e.preventDefault();
+      var form = steps[5].querySelector('.q-form');
+      if(form && form.checkValidity()){
+        var name = form.getAttribute('data-name');
+        var chosen = form.querySelector('input[type=radio]:checked');
+        answers[name] = chosen ? chosen.value : null;
+        tallyAndRender();
+      } else if(form){
+        var first = form.querySelector('input[required]');
+        if(first && first.reportValidity){ first.reportValidity(); }
+      }
+    }
+    if(e.target.id === 'restartBtn'){
+      e.preventDefault();
+      document.querySelectorAll('.q-form input[type=radio]').forEach(function(r){ r.checked = false; });
+      answers = { q1:null, q2:null, q3:null, q4:null, q5:null };
+      show(0);
+    }
+  });
+
+  document.querySelectorAll('.q-form').forEach(function(f){
+    f.addEventListener('change', function(){
+      var has = f.querySelector('input[type=radio]:checked');
+      var stepEl = f.closest('.step');
+      var nextBtn = stepEl.querySelector('[data-next]');
+      var submitBtn = document.getElementById('submitBtn');
+      if(nextBtn){ nextBtn.disabled = !has; }
+      if(submitBtn && stepEl.getAttribute('data-step') === '5'){ submitBtn.disabled = !has; }
+    });
+  });
+
+  show(0);
+})();
+</script>
+</body>
+</html>
+
